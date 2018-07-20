@@ -3,9 +3,11 @@
  * @Date: 2018-06-19 08:36:07  
  * 基础类
  */
-const {
-  Controller
-} = require('egg');
+
+'use strict';
+
+const { Controller } = require('egg');
+
 class BaseController extends Controller {
   get user() {
     return this.ctx.session.user;

@@ -1,8 +1,12 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <link rel="stylesheet" href="/public/styles/style.css" />
   </head>
   <body>
+    <div class="page-home">
+
+    </div>
     <ul class="news-view view">
       {% for item in list %}
         <li class="item">

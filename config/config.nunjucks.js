@@ -4,10 +4,11 @@
  * 视图引擎模板
  */
 'use strict';
+
 const nunjucks = {
   defaultViewEngine: 'nunjucks',
   mapping: {
-    '.tpl': 'nunjucks',
+    '.nj': 'nunjucks',
   },
 };
 module.exports = nunjucks;

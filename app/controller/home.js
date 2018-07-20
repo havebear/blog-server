@@ -22,7 +22,13 @@ class HomeController extends BaseController {
         }
       ]
     };
-    await this.ctx.render('index.tpl', dataList);
+    await this.ctx.render('index.nj', dataList);
+  }
+
+  async demo() {
+    let { ctx } = this;
+    const results = await ctx.service.home.all();
+    ctx.body = results;
   }
 }
 
